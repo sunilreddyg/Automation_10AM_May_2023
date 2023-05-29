@@ -1,0 +1,75 @@
+Wait Commands:-->
+
+	wait for visible:-->
+		Wait for a target element to be visible on the page.
+
+
+		wait for visible      id="email"        30000
+
+
+	Wait for not visible:-->
+		wait for a target element to be hidden on the page.
+
+
+		wait for not visible      id="email"        30000
+
+	wait for text:-->
+		wait for a target element contains expected text
+
+		wait for text 		id="text"         ExpectedText
+
+	wait for editable:-->	
+		wait for editbox to be editable
+
+		wait for editable	id="email"       40000
+
+	wait for not editable:-->
+
+		wait for editbox to be readonly mode
+		
+		wait for not editable    id="email"      50000
+
+	wait for element presence:-->
+			
+		wait for expected target presented at htmlsource
+
+		wait for presence   id="name"        40000
+
+	wait for element not presence:-->
+		
+		Wait for a target element to not be present on the page.
+
+		wait for elemnet not presence   id="name"        40000
+
+
+Store Commands:-->
+
+		Store commands are usefull to store String memory
+		to any referenced name so that memory can be
+		re use when ever it requited
+
+		
+		store title	 Facebook Page	    FB_Title
+		echo		${FB_title}
+
+======================================================================
+Creating test suite in Selenium IDE:-->
+
+		Test suites are usefull to store group of related tests
+
+	
+		=> Open Selenium IDE
+		=> From Tests menu list select Testsuites
+		=> Click on + Button
+		=> Enter Suite name at Popup window
+		=> Right click on suite Menu 
+		=> Click Add test button
+		=> Then Selected Required Test
+		=> Click on Add to suite
+
+
+	How to Run Test Suites:-->
+		=> Open Testsuites menu
+		=> Select one on any tests under suite
+		=> Click on PlayallTests in suites 
+		
