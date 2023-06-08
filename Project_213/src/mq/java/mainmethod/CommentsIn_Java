@@ -1,0 +1,20 @@
+
+use double forward slashes to comment single line
+
+	//Write here program
+	
+Group comment
+
+	/*
+		  Enter forward slash and start and press enter
+		  it should end with start and forward slash
+	 */
+	 
+Shortcut to comment existing lines
+
+	=> first select group of lines
+	=> then press Control+Shift and Forward slash [control+shift+/]
+
+Shortcut to release commented lines
+	=> first select already commented lines
+	=> then press Control+Shift and backward slash [control+shift+\]

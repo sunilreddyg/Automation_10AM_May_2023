@@ -1,0 +1,45 @@
+
+main method:-->
+	* In java program execution starts from main method
+	* Under main method we  can write statement directly or
+		can call statement using object creation...
+	* All reusable methods can call from main method using object creation.
+
+Syntax:-->
+
+	public  class AppTest
+	{
+		public static  void main(String args[])
+		{
+			System.out.println("hello world!");
+		}
+
+	}
+
+
+public static void main(String args[]):----->
+
+public:-->
+	public is a access modifier. It means this method
+	allow any public class information [method ,Constructor,variables]
+	across the project
+
+static:-->
+	static is a access specifier. It specifies only static
+	methods allowed to call directly by using class name. Other
+	than static methods [Instance methods with not define with 
+	static keyword]  call using object creation syntax..
+
+void:-->
+	Void is a method which doesn't return any value. But
+	other than void all method return values...
+
+main:-->
+	main is a method name. Should not be preferred other name
+	to write.
+
+String args[]:-->
+	main method allow functional parameters in array format.
+	By creation of object we can also reuse main method.
+===================================================================
+		
