@@ -1,0 +1,57 @@
+Parameters:-->
+	Also known as functional parameters or method parametrs
+	=> Parameters change state of method behaviour
+	
+	Advantages of parameters:-->
+		=> Avoid hardcode progrmming
+		=> Method reusability [Instead of writing duplicate methods
+				we can reuse same method with differnet input values]
+		=> Flexibility [Method accept different parameter values]
+		=> Code optimization [Optimize code into less lines]
+		
+		Parameter types:-->
+		
+				1. CallByValue
+				2. CallByReferrence
+				
+		CallByvalue:-->
+				Passing datatypes as parameters is called callbyvalues
+				
+				
+				public class RobotA
+				{
+					//Method without parameters
+					void Walk()
+					{
+						int kmps=10;
+						System.out.println(kmps);
+					}
+				
+					void Run(int speed)
+					{
+						System.out.println(speed);
+					}
+					
+					public static void main(String args[])
+					{
+							RobotA obj=new RobotA();
+							obj.Walk();   //No arguments passing because method don't have parameters
+							obj.Run(15);  //passing Integer argument
+							obj.Run(25);
+					}
+				
+				}
+=======================================================================
+
+				
+				
+				
+				
+				
+				
+				
+				
+		
+		
+		
+		

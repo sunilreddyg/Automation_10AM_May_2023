@@ -13,7 +13,7 @@ public class VariableTypes
 			System.out.println(name);
 			
 			//printing global variables
-			System.out.println(email+"   "+value);
+			System.out.println(email+" --->  "+value);
 		}
 		
 		public void method2()
@@ -32,12 +32,12 @@ public class VariableTypes
 			System.out.println(myemail);
 			
 			//Calling Static variable using class name
-			int newvalue=VariableTypes.value;
-			System.out.println(newvalue);
+			int NewValue=VariableTypes.value;
+			System.out.println(NewValue);
 			
 			/*
 			 * Note:--> When variable called it always return value
-			 * 			try to runtime value into new variable
+			 * 			try to store runtime value into new variable
 			 */
 			
 
