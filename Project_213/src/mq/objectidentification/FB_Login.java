@@ -14,7 +14,8 @@ public class FB_Login
 		driver.manage().window().maximize();
 		
 		driver.findElement(By.id("email")).sendKeys("darshan");
-
+		driver.findElement(By.id("pass")).sendKeys("Hello");
+		driver.findElement(By.name("login")).click();
 	}
 
 }
