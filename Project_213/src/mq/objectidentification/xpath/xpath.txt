@@ -34,8 +34,8 @@ Xpath text:-->
 	//tagname[.='Element Text']
 	//tagname[text()='Element partial Text']
 	
-	text() -->  Refer partial text
-	.        --> Refer element text.
+	text() -->  Refer partial text [group elemnts contains same text]
+	.        --> Refer singl element text.
 
 Html Source:-->
 
