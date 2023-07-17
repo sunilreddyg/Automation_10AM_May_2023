@@ -27,6 +27,7 @@ public class GetSize
 		System.out.println("Object width is --> "+Obj_width);
 		
 		//Check object is visble at webpage
+		//for hidden object selenium return height and width zero 
 		if(Obj_Height > 0)
 			System.out.println("Object visible at webpage");
 		else
