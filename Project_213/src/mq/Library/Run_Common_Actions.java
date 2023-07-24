@@ -26,6 +26,8 @@ public class Run_Common_Actions {
 		action.selectoptions("//select[@id='month']", "value", "5");
 		action.selectoptions("//select[@id='year']", "index", "20");
 		action.CaptureScreen("Dropdown Options");
+		
+		
 	}
 
 }

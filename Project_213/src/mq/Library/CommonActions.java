@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -17,7 +16,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonActions 
 {
@@ -109,6 +110,42 @@ public class CommonActions
 				e.printStackTrace();
 			}
 	}
+	
+	
+	   //Wait for Visibility,Clickable,PresenceofElement
+		public WebElement Waitfor(String type,String xpath)
+		{
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+			WebElement Element=null;
+			switch (type) {
+			case "visibile":
+				Element=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+				break;
+				
+			case "clickable":
+				Element=wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+				break;
+
+			case "presence":
+				Element=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+				break;
+			default: System.out.println("Mismatch");
+				break;
+			}
+			
+			return Element;
+		}
+		
+		//Type text into Entryboxes
+		public void type(String xpath,String input)
+		{
+			try {
+				Waitfor("visible", xpath).sendKeys(input);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
 	
 	/*
 	 * Left Mouseclick actions[Suites for Buttons,Links,RadioButton,
