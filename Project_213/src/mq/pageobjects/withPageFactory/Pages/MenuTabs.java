@@ -82,5 +82,22 @@ public class MenuTabs
 	{
 		recruitment.click();
 	}
+	
+	public void clickmyinfo()
+	{
+		CheckObjectVisibility(myInfo).click();
+	}
+	
+	
+	public WebElement CheckObjectVisibility(WebElement element)
+	{
+		try {
+			return new WebDriverWait(driver, Duration.ofSeconds(30))
+			.until(ExpectedConditions.visibilityOf(element));
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 
 }
