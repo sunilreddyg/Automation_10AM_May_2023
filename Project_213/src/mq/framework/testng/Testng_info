@@ -244,7 +244,27 @@ Creation of XML file:--->
 
 Run Suite File:--->
 		Right click on suite file---->Run as ---->  TestNg Suite 
+		
+===============================================================
+How to run required method using test suite file
 
+
+<suite name="suitename">
+	<test name="test1">
+		<classes>
+		      <class name="packagename.classname">
+		      		 <methods>
+						<include name="methodname"/> 											
+						<include name="methodname"/>
+						<exclude name="method name"/> 
+			      	 </methods>
+	          </class>
+		</classes>
+	</test>
+</suite>
+
+	include ==> Invoke method to run
+	exclude ==> Ignore methdo to run
 
 ================How to Assign groups to TestNg  test=========
 
