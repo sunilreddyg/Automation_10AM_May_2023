@@ -7,7 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import framework.datadriven.excel.keywords.Excel_commonReusable_actions;
 
-public class Read_TestCases {
+public class Read_TestCases 
+{
 
 	public static void main(String[] args) throws Exception 
 	{
